@@ -1,0 +1,25 @@
+{ "height":9,
+ "layers":[
+        {
+         "data":[],
+         "height":4,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":4,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":1,
+ "orientation":"isometric",
+ "properties":
+    {
+
+    },
+ "renderorder":"right-down",
+ "tileheight":96,
+ "tilewidth":192,
+ "version":1,
+ "width":9
+}

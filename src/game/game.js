@@ -6,16 +6,10 @@ import PlayScene from './scenes/PlayScene'
 function launch() {
   new Phaser.Game({
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
+    width: document.body.clientWidth,
+    height: document.body.clientHeight,
+    backgroundColor: '#ababab',
     parent: 'game-container',
-    physics: {
-      default: 'arcade',
-      arcade: {
-        gravity: { y: 300 },
-        debug: false
-      }
-    },
     scene: [BootScene, PlayScene]
   })
 }

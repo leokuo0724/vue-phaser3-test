@@ -1,8 +1,11 @@
 import { Scene } from 'phaser'
-import sky from '@/game/assets/sky.png'
-import bomb from '@/game/assets/bomb.png'
-import thudMp3 from '@/game/assets/thud.mp3'
-import thudOgg from '@/game/assets/thud.ogg'
+import tile from '@/game/assets/tile-192.png'
+import map from '@/game/assets/isometric-grass-and-water.json'
+import skeleton from '@/game/assets/skeleton8.png'
+import nckuShort from '@/game/assets/ncku-short.png'
+import nckuTall from '@/game/assets/ncku-tall.png'
+import bs from '@/game/assets/bs.png'
+import church from '@/game/assets/church.png'
 
 
 export default class BootScene extends Scene {
@@ -11,9 +14,13 @@ export default class BootScene extends Scene {
   }
 
   preload () {
-    this.load.image('sky', sky)
-    this.load.image('bomb', bomb)
-    this.load.audio('thud', [thudMp3, thudOgg])
+    this.load.image('tile', tile)
+    this.load.json('map', map)
+    this.load.spritesheet('skeleton', skeleton, { frameWidth: 128, frameHeight: 128 })
+    this.load.image('ncku-short', nckuShort)
+    this.load.image('ncku-tall', nckuTall)
+    this.load.image('bs', bs)
+    this.load.image('church', church)
   }
 
   create () {
